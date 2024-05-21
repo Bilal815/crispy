@@ -25,9 +25,9 @@ READERS = {'md': MarkdownReader}
 
 # Contact information
 CONTACT_INFORMATION = {
-    'Phone Number': '+92 342-270-0268',
-    'Email Address': 'captivesmeta@gmail.com',
-    'Street Address': 'Shahrah e Sher Shah Suri, North Nazimabad Town, Karachi, Pakistan',
+    'Phone Number': '+101 377 655 22125',
+    'Email Address': 'mail@yourcompany.com',
+    'Street Address': '3422 Street, Barcelona 432, Spain, New Building North, 15th Floor',
     'Map Embed URL': 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28941.979462981402!2d67.0418153!3d24.9406726!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f8014fe5943%3A0x11df7a65effb1ef6!2sNorth%20Nazimabad%20Town%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1713872000240!5m2!1sen!2s'
 }
 

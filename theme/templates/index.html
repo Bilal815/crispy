@@ -415,9 +415,9 @@
       <div class="col-md-3">
         <div class="section-text">
           <h4>Our Business Office</h4>
-          <p>3422 Street, Barcelona 432, Spain, New Building North, 15th Floor</p>
-          <p><i class="fa fa-phone"></i> +101 377 655 22125</p>
-          <p><i class="fa fa-envelope"></i> mail@yourcompany.com</p>
+          <p>{{ CONTACT_INFORMATION['Street Address'] }}</p>
+          <p><i class="fa fa-phone"></i> {{ CONTACT_INFORMATION['Phone Number'] }}</p>
+          <p><i class="fa fa-envelope"></i> {{ CONTACT_INFORMATION['Email Address'] }}</p>
         </div>
       </div>
       <div class="col-md-3">
@@ -429,7 +429,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <form name="sentMessage" id="contactForm" novalidate="">
+        <form name="sentMessage" id="contactForm" action="{{KWESFORMS_ACTION}}" novalidate="">
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
