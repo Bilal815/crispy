@@ -1,12 +1,14 @@
 # Import required module
 import os
 
+GOOGLE_ANALYTICS = ""
+
 # Author and site information
-AUTHOR = 'Raheel & Bilal'
-SITENAME = 'raheel'
+AUTHOR = 'Raheel Hassan Khan'
+SITENAME = 'MarketingProInsider'
 SITEURL = ''
 CATEGORY = ''
-SITEDESCRIPTION = 'My Blog'
+SITEDESCRIPTION = "Stay ahead of the competition by implementing the latest free social media solutions today. Don't miss out on this opportunity to revolutionize your online presence"
 DEFAULT_LOCALE = 'en_US'
 
 # To read markdown file in 
@@ -25,10 +27,10 @@ READERS = {'md': MarkdownReader}
 
 # Contact information
 CONTACT_INFORMATION = {
-    'Phone Number': '+101 377 655 22125',
-    'Email Address': 'mail@yourcompany.com',
-    'Street Address': '3422 Street, Barcelona 432, Spain, New Building North, 15th Floor',
-    'Map Embed URL': 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28941.979462981402!2d67.0418153!3d24.9406726!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f8014fe5943%3A0x11df7a65effb1ef6!2sNorth%20Nazimabad%20Town%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1713872000240!5m2!1sen!2s'
+    'Phone Number': '',
+    'Email Address': 'marketingproinsider@gmail.com',
+    'Street Address': "Al A'amal Street - Business Bay - Dubai - United Arab Emirates",
+    'Map Embed URL': "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.6860030359576!2d55.264665667777344!3d25.18007811938221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69cb98cd9041%3A0xe6be587070e7a89d!2sDAMAC%20Executive%20Bay!5e0!3m2!1sen!2s!4v1717221569842!5m2!1sen!2s"
 }
 
 # Content settings
@@ -40,7 +42,7 @@ DEFAULT_LANG = 'en'
 
 # Appearance settings
 SITELOGO = ""
-FAVEICON = '{}/theme/assets/images/icon.png'.format(SITEURL)
+FAVEICON = '{}/theme/assets/images/icon.jpg'.format(SITEURL)
 DELETE_OUTPUT_DIRECTORY = True
 THEME = 'theme/'
 
@@ -52,7 +54,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Article settings
-ARTICLE_URL = '{slug}'
+ARTICLE_URL = '{slug}/'
 ARTICLE_SAVE_AS = '{slug}.html'
 
 # Page settings
@@ -60,7 +62,7 @@ PAGE_URL = '{slug}/'
 PAGE_SAVE_AS = '{slug}/index.html'
 
 # Index settings
-INDEX_URL = '/'
+INDEX_URL = ''
 INDEX_SAVE_AS = 'index.html'
 
 # Category settings
@@ -81,6 +83,8 @@ AUTHOR_URL_SAVE_AS = 'author/{slug}/index.html'
 
 # Pages
 TEMPLATE_PAGES = {
+    'we_do.html': 'we_do.html',
+    'portfolio.html': 'portfolio.html',
     'contact.html': 'contact.html',
     '404.html': '404.html',
 }
@@ -90,6 +94,7 @@ STATIC_PATHS = ['extra/robots.txt']
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
 }
+
 
 # Blogroll links
 LINKS = (
@@ -101,11 +106,11 @@ LINKS = (
 
 # Social media links
 SOCIAL_MEDIA_LINKS = (
-    ('Twitter', 'https://twitter.com/your_twitter_username'),
-    ('Facebook', 'https://facebook.com/your_facebook_username'),
-    ('GitHub', 'https://github.com/your_github_username'),
-    ('Youtube', 'https://youtube.com/your_youtube_username'),
-    ('Tiktok', ''),
+    ('facebook-f', 'https://www.facebook.com/profile.php?id=61559969553167&mibextid=ZbWKwL'),
+    ('twitter', 'https://www.linkedin.com/company/103871776/'),
+    ('linkedin-square', 'https://pin.it/dJggaRJ3K'),
+    ('instagram', 'https://pin.it/dJggaRJ3K'),
+    ('youtube-play', 'https://pin.it/dJggaRJ3K'),
     # Add more social media links here
 )
 
@@ -113,7 +118,7 @@ SOCIAL_MEDIA_LINKS = (
 DEFAULT_PAGINATION = False
 '''PAGINATION_PATTERNS = (
     (1, '{url}', '{save_as}'),
-    (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
+    (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index'),
 )'''
 
 # Plugins
@@ -131,11 +136,11 @@ SITEMAP = {
         'pages': 0.5
     },
     'changefreqs': {
-        'articles': 'daily',
-        'pages': 'daily',
-        'indexes': 'daily',
+        'articles': 'weekly',
+        'pages': 'weekly',
+        'indexes': 'monthly',
     },
-    'exclude': [],  # ex: ['categories', 'tags']
+    'exclude': ['404', 'archives', 'tags', 'categories', 'authors'],  # ex: ['categories', 'tags']
 }
 
 # SEO settings
